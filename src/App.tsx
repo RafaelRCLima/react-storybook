@@ -1,8 +1,17 @@
-import React from 'react'
-import { Example } from './Example'
+import React from 'react';
 
-function App () {
-  return <Example customText='Storybook example'></Example>
+import Layout from './components/Layout'
+import GlobalStyles from './styles/GlobalStyles'
+
+function App() {
+  return (
+    <>
+      <Layout />
+
+      <GlobalStyles />
+      
+    </>
+  );
 }
 
-export default App
+export default App;
