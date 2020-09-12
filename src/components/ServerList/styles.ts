@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  bacground-color: var(--tertiary);
+  background-color: var(--tertiary);
   padding: 11px 0;
 
   max-height: 100vh;
@@ -23,5 +23,4 @@ export const Separator = styled.div`
   border-bottom: 2px solid var(--quaternary);
 
   margin-bottom: 8px
-  
 `

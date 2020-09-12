@@ -10,12 +10,45 @@ export const Button = styled.button <Props>`
 
   width: 48px;
   height: 48px;
+  border-radius: 50%;
 
   margin-bottom: 8px;
 
-  background-color: ${Props => 
-    Props.isHome ? 'var(--rocketseat)' : 'var(--primary)' };
+  background-color: ${(props) => 
+    props.isHome ? '#CD5C5C' : 'var(--primary)' };
 
-  position: relative
+  position: relative;
   cursor: pointer;
+
+  > img {
+    width: 45px;
+    height: 45px;
+  }
+
+  &::before {
+    width: 9px;
+    height: 9px;
+
+    position: absolute;
+    left: -17px;
+    top: calc(50% - 4.5px);
+
+    background-color: var(--white);
+    border-radius: 50%;
+
+    content: '';
+    display: ${(props) => props.hasNotifications ? 'inline' : 'none'}
+  }
+
+  &::after {
+
+  }
+
+  transition: border-radius .2s, background-color .2s;
+
+  &.active,
+  &:hover {
+    border-radius: 16px;
+    background-color: ${(props) => props.isHome ? '#A52A2A' : 'var(--discord)'}
+  }
 `;
