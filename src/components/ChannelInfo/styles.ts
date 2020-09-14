@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Hashtag } from 'styled-icons/heroicons-outline'
 
 export const Container = styled.div`
   grid-area: CI;
@@ -14,7 +15,7 @@ export const Container = styled.div`
   z-index: 2;
 `
 
-export const HashtagIcon = styled.div`
+export const HashtagIcon = styled(Hashtag)`
   width: 24px;
   height: 24px;
 
