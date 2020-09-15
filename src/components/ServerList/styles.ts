@@ -11,7 +11,7 @@ export const Container = styled.div`
   padding: 11px 0;
 
   max-height: 100vh;
-  overflow-y: scroll:
+  overflow-y: scroll;
 
   ::-webkit-scrollbar {
     display: none;

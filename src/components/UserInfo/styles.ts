@@ -47,7 +47,7 @@ export const UserData = styled.div`
 
 export const Icons = styled.div`
   display: flex;
-  align-items: cneter;
+  align-items: center;
 
   > svg: not(:first-child) {
     margin-left: 7px;
