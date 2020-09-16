@@ -1,8 +1,17 @@
-// import React from 'react'
-// import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-// import { ChannelButton } from '../components/ChannelButton/'
+import { ChannelButton } from '../components/ChannelButton'
 
-// storiesOf('ChannelButton', module).add('Default', () => <ChannelButton/>)
+import GlobalStyles from '../styles/GlobalStyles'
 
-export const error = 'erro'
+export default {
+  title: 'ChannelButton',
+  component: ChannelButton
+}
+
+export const ChannelButtonV1 = () => (
+  <>
+    <ChannelButton channelName="Channel"/>
+    <GlobalStyles />
+  </>
+)

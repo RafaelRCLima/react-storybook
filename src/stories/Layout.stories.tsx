@@ -1,6 +1,16 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import GlobalStyles from '../styles/GlobalStyles'
 
-import { Layout } from '../components/Layout/'
+import { Layout } from '../components/Layout'
 
-storiesOf('Layout', module).add('Default', () => < Layout/>)
+export default {
+  title: 'Layout',
+  component: Layout
+}
+
+export const LayoutV1 = () => (
+  <>
+    <Layout />
+    <GlobalStyles />
+  </>
+)

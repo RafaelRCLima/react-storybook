@@ -1,6 +1,17 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 
-import { ServerList } from '../components/ServerList/'
+import { ServerList } from '../components/ServerList'
 
-storiesOf('ServerList', module).add('Default', () => < ServerList/>)
+import GlobalStyles from '../styles/GlobalStyles'
+
+export default {
+  title: 'ServerList',
+  component: ServerList
+}
+
+export const ServerListV1 = () => (
+  <>
+    <ServerList />
+    <GlobalStyles />
+  </>
+)

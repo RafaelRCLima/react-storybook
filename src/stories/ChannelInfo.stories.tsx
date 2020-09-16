@@ -1,6 +1,17 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 
-import { ChannelInfo } from '../components/ChannelInfo/'
+import { ChannelInfo } from '../components/ChannelInfo'
 
-storiesOf('ChannelInfo', module).add('Default', () => < ChannelInfo/>)
+import GlobalStyles from '../styles/GlobalStyles'
+
+export default {
+  title: 'ChannelInfo',
+  component: ChannelInfo
+}
+
+export const ChannelInfoV1 = () => (
+  <>
+    <ChannelInfo />
+    <GlobalStyles />
+  </>
+)
